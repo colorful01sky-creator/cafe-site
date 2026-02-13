@@ -1,0 +1,169 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    position: relative;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #ffcc00;
+    transition: 0.3s;
+}
+
+nav a:hover::after{
+    width: 100%;
+}
+
+.hero {
+    color: white;
+    height: 50vh;
+
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(images/hero.jpg)/*url("https://picsum.photos/1200/600")自動で画像があてられる*/;
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 20px;
+}
+
+/* mainの中を横並びにする
+main {
+    display: flex;
+    gap: 40px;
+}
+  mainから直下のsectionへ
+main > section {
+    flex: 3;
+}
+*/
+
+aside {
+    padding: 40px 20px;
+    background:#f5f5f5;
+}
+
+aside img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
+}
+
+.menu-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.menu-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.news-list {
+  list-style: none;
+  padding: 0;
+}
+
+.news-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.news-list span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+
+
+
+/* メディアクエリ */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;   /* ← 追加すると少し呼吸できる */
+  }
+
+  .hero {
+    height: 40vh;
+  }
+
+}
+
