@@ -91,7 +91,7 @@ aside img {
     height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
-    filter: brightness(1.35);
+    filter: brightness(1.2) saturate(1.15) contrast(1.08);
 }
 
 section {
