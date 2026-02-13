@@ -91,6 +91,7 @@ aside img {
     height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
+    filter: brightness(1.35);
 }
 
 section {
