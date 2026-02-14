@@ -50,7 +50,8 @@ nav a:hover::after{
     color: white;
     height: 50vh;
 
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(images/hero.jpg)/*url("https://picsum.photos/1200/600")自動で画像があてられる*/;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/hero.jpg)
+    /*url("https://picsum.photos/1200/600")自動で画像があてられる*/;
 
     background-size: cover;
     background-position: center;
@@ -150,8 +151,17 @@ footer {
 .news-list span {
   font-weight: bold;
   margin-right: 10px;
+
+  color: #6b705c; 
+  font-weight: bold;
 }
 
+section h2 {
+  border-bottom: 2px solid #e9edc9;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
 
 
 
