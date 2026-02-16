@@ -1,108 +1,149 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>ぬくもりカフェ</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <h1 class="logo">ぬくもりカフェ<span>Nukumori Cafe</span></h1>
-      <nav>
-        <ul>
-          <li><a href="#about">Home</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#access">Access</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>ぬくもりカフェ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="logo">ぬくもりカフェ<span>Nukumori Cafe</span></h1>
+    <nav>
+      <ul id="navMenu">
+        <li><a href="#about">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#access">Access</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
 
-    <div class="container">
-  <main>
-    <section class="hero">
-      <h2>ほっと一息つける場所</h2>
-    </section>
+  <div class="container">
+    <main>
+      <section class="hero">
+        <h2>ほっと一息つける場所</h2>
+      </section>
 
-    <section id="about">
-      <h2>お店について</h2>
-      <p>地元の農家さんが大切に育てた食材を使い、ひとつひとつ心を込めて手作りしています。</p>
-      <p>Wi-Fiやコンセントも自由にお使いいただけるので、お仕事や読書など、あなたの「自分時間」を大切に過ごしてください。</p>
-      <p>窓から差し込む光と一緒に、穏やかなひとときをお届けできれば嬉しいです。</p>
-    </section>
+      <section id="about">
+        <h2>お店について</h2>
+        <p>地元の農家さんが大切に育てた食材を使い、ひとつひとつ心を込めて手作りしています。</p>
+        <p>Wi-Fiやコンセントも自由にお使いいただけるので、お仕事や読書など、あなたの「自分時間」を大切に過ごしてください。</p>
+        <p>窓から差し込む光と一緒に、穏やかなひとときをお届けできれば嬉しいです。</p>
+      </section>
 
-    <section id="menu">
-      <h2>メニュー</h2>
-      <div class="menu-items">
-
-        <div class="menu-card">
-          <img src="images/coffee.webp" alt="ブレンドコーヒー">
-        <h3>ブレンドコーヒー</h3>
-          <p>450円</p>
+      <section id="menu">
+        <h2>メニュー</h2>
+        <div class="menu-items grid-layout">
+          <div class="card">
+            <img src="images/coffee.webp" alt="ブレンドコーヒー">
+            <h3>ブレンドコーヒー</h3>
+            <p class="price">450円</p>
+          </div>
+          <div class="card">
+            <img src="images/cafe-latte.webp" alt="カフェラテ">
+            <h3>カフェラテ</h3>
+            <p class="price">500円</p>
+          </div>
+          <div class="card">
+            <img src="images/cake.webp" alt="日替わりケーキ">
+            <h3>日替わりケーキ</h3>
+            <p class="price">600円</p>
+          </div>
         </div>
+      </section>
 
-        <div class="menu-card">
-          <img src="images/cafe-latte.webp" alt="カフェラテ">
-        <h3>カフェラテ</h3>
-          <p>500円</p>
+      <aside>
+        <h2>今月のおすすめ</h2>
+        <div class="recommend-items grid-layout">
+          <div class="card">
+            <img src="images/ichigo.webp" alt="いちごラテ">
+            <h3>期間限定 いちごラテ</h3>
+            <p class="price">550円</p>
+          </div>
+          <div class="card">
+            <img src="images/pring.webp" alt="プリン">
+            <h3>手作りプリン</h3>
+            <p class="price">450円</p>
+          </div>
+          <div class="card">
+            <img src="images/tomato.webp" alt="トマトパスタ">
+            <h3>トマトアンチョビパスタ</h3>
+            <p class="price">950円</p>
+          </div>
         </div>
+      </aside>
 
-        <div class="menu-card">
-          <img src="images/cake.webp" alt="日替わりケーキ">
-       <h3>日替わりケーキ</h3>
-          <p>600円</p>
-        </div>
+<section id="news">
+  <h2>お知らせ</h2>
+  <ul class="news-list">
+    <li>
+      <span>01/25</span>
+      <p>【季節限定】ほっこり温まる「節分メニュー」が登場しました！</p>
+    </li>
+    <li>
+      <span>01/10</span>
+      <p>新しい一年の始まりに。お正月限定メニューを更新しました。</p>
+    </li>
+    <li>
+      <span>12/25</span>
+      <p>【ご案内】年末年始ものんびり営業します。<a href="#">スケジュールはこちら</a></p>
+    </li>
+  </ul>
+</section>
 
-      </div>
-    </section>
-
-  <aside>
-    <h2>今月のおすすめ</h2>
-    <div class="recommend-items">
-      <div class="recommend-card">
-      <img src="images/ichigo.webp" alt="いちごラテ">
-        <h3>期間限定 いちごラテ</h3>
-        <p>550円</p>
-      </div>
-
-      <div class="recommend-card">
-      <img src="images/pring.webp" alt="プリン">
-        <h3>手作りプリン </h3>
-        <p>450円</p>
-      </div>
-
-      <div class="recommend-card">
-      <img src="images/tomato.webp" alt="トマトパスタ">
-        <h3>トマトアンチョビパスタ </h3>
-        <p>950円</p>
-      </div>
-
-    </div>
-  </aside>
-
-  <section id="news">
-    <h2>お知らせ</h2>
-<ul class="news-list">
-  <li><span>01/25</span>【季節限定】ほっこり温まる「節分メニュー」が登場しました！</li>
-  <li><span>01/10</span>新しい一年の始まりに。お正月限定メニューを更新しました。</li>
-  <li><span>12/25</span>【ご案内】年末年始ものんびり営業します。<a href="#"><span>スケジュールはこちら。</span></a></li>
-</ul>
-  </section>
-
-    <section id="access">
-      <h2>アクセス</h2>
-      <p>営業時間：10:00〜17:00</p>
-      <p>住所：さいたま市〇〇区１−２−３</p>
-      <p>TEL：048-123-XXXX</p>
-    </section>
-  </main>
-
+      <section id="access">
+        <h2>アクセス</h2>
+        <p>営業時間：10:00〜17:00</p>
+        <p>定休日：火曜日・水曜日</p>
+        <p>住所：さいたま市〇〇区１−２−３</p>
+        <p>TEL：048-123-XXXX</p>
+      </section>
+    </main>
   </div>
 
-    <footer>
-      <p>&copy; 2026 ぬくもりカフェ</p>
-    </footer>
+  <footer>
+    <p>&copy; 2026 ぬくもりカフェ</p>
+  </footer>
 
-  </body>
+  <button id="toTop">↑</button>
+
+  <script>
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("navMenu");
+const body = document.body; // bodyを取得
+
+// ハンバーガーの開閉
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+  body.classList.toggle("menu-open"); // 背景を暗くするクラスを付け外し
+});
+
+// リンクをクリックしたら閉じる
+const navLinks = document.querySelectorAll("#navMenu a");
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+    body.classList.remove("menu-open"); // ここでもクラスを外す
+  });
+});
+
+// スクロール量に応じて「TOPへ戻る」ボタンを表示
+window.addEventListener("scroll", () => {
+  toTop.style.display = window.scrollY > 300 ? "block" : "none";
+});
+
+// スムーススクロールでTOPへ
+toTop.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+  </script>
+</body>
 </html>
