@@ -9,6 +9,17 @@
 <body>
   <header>
     <h1 class="logo">ぬくもりカフェ<span>Nukumori Cafe</span></h1>
+
+    <nav class="nav">
+    <button class="nav-close" aria-label="メニューを閉じる"></button>
+      <ul>
+        <li><a href="#about">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#access">Access</a></li>
+       </ul>
+    </nav>
+
     <nav>
       <ul id="navMenu">
         <li><a href="#about">Home</a></li>
@@ -16,6 +27,7 @@
         <li><a href="#news">News</a></li>
         <li><a href="#access">Access</a></li>
       </ul>
+
       <button class="hamburger" id="hamburger">
         <span></span>
         <span></span>
@@ -123,6 +135,14 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
   body.classList.toggle("menu-open"); // 背景を暗くするクラスを付け外し
+});
+
+  const closeBtn = document.querySelector(".nav-close");
+
+  closeBtn.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+  body.classList.remove("menu-open");
 });
 
 // リンクをクリックしたら閉じる
