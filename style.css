@@ -175,6 +175,7 @@ body.menu-open::before {
   right: 20px;
   cursor: pointer;
   z-index: 1000;
+  display: none;
 }
 
 nav {
@@ -299,5 +300,9 @@ footer {
   nav ul li a {
     font-size: 1.2rem;
     letter-spacing: 0.1em;
+  }
+
+  .nav-close {
+    display: block;
   }
 }
